@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+        function confirmSubmit(event){
+            event.preventDefault();
+
+            if(
+
+confirm("Are you sure you want to submit this order?")
+
+            )
+       
+            {
+
+                document.getElementById("foodForm").submit();
+
+            }
+       
+       
+        }
+
+
+
+
+
+    </script>
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+    <div style="background-color:rgb(8, 112, 156); display: flex; justify-content: center;">
+        <h1 style="color:rgba(0, 0, 0, 0.877); font: bold italic;">Giant Burgers Online Order</h1>
+
+    </div>
+
+    <div style="display: flex; justify-content: center; border: 8px solid black; padding: 10px;">
+
+    <div style="display: flex; justify-content: center;">
+        <div> 
+            <br><br>
+            <h1>(Food Order)</h1>
+            <p>Order your fooood here! (Try our special Giant Spicy Chicken Sandwich today!)</p>
+        
+        
+            <form   
+            
+            action="https://formspree.io/f/xgvwgnel" 
+            
+            method="post" 
+            
+            id ="foodForm"
+            
+            onsubmit="confirmSubmit(event)"
+            
+            
+            
+            
+            
+            >
+
+            
+                <label>Food name: </label><br>
+                <select name="From" style="padding: 5px 10px">
+                    <option value="Giant Burger">Giant Burger</option>
+                    <option value="Giant Chicken Sandwich">Giant Chicken Sandwich</option>
+                    <option value="Giant Spicy Chicken Sandwich">Giant Spicy Chicken Sandwich</option>
+
+                </select><br><br>
+                <label>Add A Side: </label><br>
+                <select name="To" style="padding: 5px 10px">
+                    <option value="None">None</option>
+                    <option value="Salted Potato Chips">Salted Potato Chips</option>
+                    <option value="Fries">Fries</option>
+                </select><br><br>
+
+                <label>Select Options: </label><br>
+                <select name="To" style="padding: 5px 10px">
+                    <option value="Non-Vegetarian/Vegan">Non-Vegetarian/Vegan</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                </select><br><br>
+                
+
+                <label>Location:  </label><br>
+                <input type="location" name="location"><br>
+                <br>
+                <label>Order Count:  </label><br>
+                <input type="number" name="Count"><br>
+                <br>
+                <label>Customer Name:  </label><br>
+                <input type="text" name="name"><br>
+                <br>
+                <label>Phone number:  </label><br>
+                <input type="text" name="Phone"><br>
+                <br>
+                <label>Delivery Date:  </label><br>
+                <input type="date" name="delivdate"><br>
+                <br>
+                <label>Special Info:  </label><br>
+                <textarea type="text" name="Special info" style="padding: 5px 5px;"></textarea><br>
+                <br>
+                
+                <input type="checkbox" name="checkbox"> <label>Do you want to recieve order updates and rewards from us?</label><br>
+        
+        
+                <button  type="submit" style="background-color: rgb(6, 132, 143); color: white; padding: 10px;">Order Now!</button>
+
+                <input type="reset" value="Reset" style="padding: 10px">
+            </form>
+        
+        
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+
+
+<footer>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html> 
